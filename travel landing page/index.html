@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('travel.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+
+        .main-section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .main-section h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+   
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cta-button {
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4545;
+        }
+
+
+        .tourist-places {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .tourist-places h3 {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .places-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .place {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .place img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+
+        .place h4 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .place p {
+            font-size: 16px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the World</h1>
+        <p>Your dream adventure awaits!</p>
+    </header>
+    <section class="main-section fade-in">
+        <h2>Welcome to Our Travel Paradise</h2>
+        <p>Discover the most amazing destinations around the globe.</p>
+        <button class="cta-button">Explore Now</button>
+    </section>
+    <section class="tourist-places">
+        <h3>Popular Tourist Places</h3>
+        <div class="places-container">
+            <div class="place">
+                <img src="eiffel-tower.jpg" alt="Eiffel Tower">
+                <h4>Eiffel Tower, Paris</h4>
+                <p>Iconic landmark in the heart of Paris.</p>
+            </div>
+            <div class="place">
+                <img src="machu-picchu.jpg" alt="Machu Picchu">
+                <h4>Machu Picchu, Peru</h4>
+                <p>Ancient Inca citadel in the Andes mountains.</p>
+            </div>
+            <div class="place">
+                <img src="Santorini.jpg" alt="Santorini">
+                <h4>Santorini, Greece</h4>
+                <p>Beautiful island with stunning sunsets.</p>
+            </div>
+            <div class="place">
+                <img src="china.jpg" alt="Great Wall of China">
+                <h4>Great Wall of China</h4>
+                <p>World's longest wall, a UNESCO World Heritage site.</p>
+            </div>
+            <div class="place">
+                <img src="pyramids.jpg" alt="Pyramids of Giza">
+                <h4>Pyramids of Giza, Egypt</h4>
+                <p>Ancient Egyptian burial monuments near Cairo.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
